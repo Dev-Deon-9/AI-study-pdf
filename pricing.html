@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - AI Study PDF</title>
+    <link rel="stylesheet" href="pricing.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="pricing-navbar">
+
+        <div class="pricing-logo">
+            <h2>AI Study PDF</h2>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="pricing-nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="study.html">Study</a>
+            <a href="pricing.html" class="active">Pricing</a>
+        </nav>
+
+        <div class="pricing-user">
+            <div class="pricing-avatar">G</div>
+            <span>Gideon</span>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button class="pricing-menu-button" onclick="togglePricingMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+    <aside class="pricing-mobile-menu" id="pricingMobileMenu">
+
+        <button class="pricing-close-button" onclick="togglePricingMenu()">
+            ×
+        </button>
+
+        <nav class="pricing-mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="study.html">Study</a>
+            <a href="pricing.html" class="active">Pricing</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- PRICING PAGE -->
+    <main class="pricing-page">
+
+        <!-- PAGE INTRO -->
+        <section class="pricing-intro">
+
+            <p class="pricing-small-title">SIMPLE & FLEXIBLE</p>
+
+            <h1>Choose the plan that works for you</h1>
+
+            <p>
+                Start for free and upgrade when you need more powerful
+                tools to study smarter with your PDFs.
+            </p>
+
+        </section>
+
+
+        <!-- PRICING PLANS -->
+        <section class="pricing-section">
+
+            <!-- LEFT ARROW -->
+            <button class="pricing-arrow pricing-arrow-left" onclick="previousPlan()">
+                ←
+            </button>
+
+
+            <!-- PLANS -->
+            <div class="pricing-plans" id="pricingPlans">
+
+                <!-- FREE -->
+                <article class="pricing-card">
+
+                    <div class="pricing-card-top">
+                        <span class="plan-label">FREE</span>
+
+                        <h2>Free</h2>
+
+                        <p>
+                            Get started with the basics and discover
+                            smarter ways to study.
+                        </p>
+                    </div>
+
+                    <div class="pricing-price">
+                        <strong>₦0</strong>
+                        <span>/month</span>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li>✓ 3 PDF uploads per month</li>
+                        <li>✓ Basic AI summaries</li>
+                        <li>✓ Limited quizzes</li>
+                        <li>✓ Basic flashcards</li>
+                        <li>✓ Limited PDF chat</li>
+                        <li>✓ Study progress</li>
+                    </ul>
+
+                    <a href="register.html" class="pricing-button">
+                        Get Started
+                    </a>
+
+                </article>
+
+
+                <!-- PRO -->
+                <article class="pricing-card pricing-card-pro">
+
+                    <div class="recommended">
+                        RECOMMENDED
+                    </div>
+
+                    <div class="pricing-card-top">
+                        <span class="plan-label">PRO</span>
+
+                        <h2>Pro</h2>
+
+                        <p>
+                            Everything you need for a more powerful
+                            and productive study experience.
+                        </p>
+                    </div>
+
+                    <div class="pricing-price">
+                        <strong>₦2,500</strong>
+                        <span>/month</span>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li>✓ 30 PDF uploads per month</li>
+                        <li>✓ Unlimited AI summaries</li>
+                        <li>✓ Unlimited quizzes</li>
+                        <li>✓ Unlimited flashcards</li>
+                        <li>✓ Extended PDF chat</li>
+                        <li>✓ Detailed progress tracking</li>
+                    </ul>
+
+                    <a href="#" class="pricing-button">
+                        Upgrade to Pro
+                    </a>
+
+                </article>
+
+
+                <!-- PREMIUM -->
+                <article class="pricing-card">
+
+                    <div class="pricing-card-top">
+                        <span class="plan-label">PREMIUM</span>
+
+                        <h2>Premium</h2>
+
+                        <p>
+                            The complete AI study experience for
+                            serious learners.
+                        </p>
+                    </div>
+
+                    <div class="pricing-price">
+                        <strong>₦5,000</strong>
+                        <span>/month</span>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited PDF uploads</li>
+                        <li>✓ Unlimited AI tools</li>
+                        <li>✓ Priority AI processing</li>
+                        <li>✓ Advanced study features</li>
+                        <li>✓ Full progress analytics</li>
+                        <li>✓ Everything in Pro</li>
+                    </ul>
+
+                    <a href="#" class="pricing-button">
+                        Go Premium
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <!-- RIGHT ARROW -->
+            <button class="pricing-arrow pricing-arrow-right" onclick="nextPlan()">
+                →
+            </button>
+
+        </section>
+
+
+        <!-- PLAN INDICATORS -->
+        <div class="pricing-dots">
+
+            <button class="pricing-dot active" onclick="showPlan(0)"></button>
+            <button class="pricing-dot" onclick="showPlan(1)"></button>
+            <button class="pricing-dot" onclick="showPlan(2)"></button>
+
+        </div>
+
+
+        <!-- BOTTOM NOTE -->
+        <section class="pricing-note">
+
+            <h3>Not sure which plan to choose?</h3>
+
+            <p>
+                Start with the Free plan. You can upgrade whenever
+                you need more AI-powered study tools.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PRICING CAROUSEL + MENU -->
+    <script>
+
+        let currentPlan = 0;
+
+        const plans = document.querySelectorAll(".pricing-card");
+        const dots = document.querySelectorAll(".pricing-dot");
+
+        function showPlan(index) {
+
+            if (index < 0) {
+                index = plans.length - 1;
+            }
+
+            if (index >= plans.length) {
+                index = 0;
+            }
+
+            currentPlan = index;
+
+            plans.forEach((plan, i) => {
+                plan.style.display = i === currentPlan ? "block" : "none";
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === currentPlan);
+            });
+        }
+
+        function previousPlan() {
+            showPlan(currentPlan - 1);
+        }
+
+        function nextPlan() {
+            showPlan(currentPlan + 1);
+        }
+
+        function togglePricingMenu() {
+
+            const menu = document.getElementById("pricingMobileMenu");
+
+            menu.classList.toggle("show");
+        }
+
+        /*
+            Desktop: show all pricing cards.
+            Mobile: show one pricing card at a time.
+        */
+        function handlePricingLayout() {
+
+            if (window.innerWidth > 768) {
+
+                plans.forEach(plan => {
+                    plan.style.display = "block";
+                });
+
+            } else {
+
+                showPlan(currentPlan);
+
+            }
+        }
+
+        handlePricingLayout();
+
+        window.addEventListener("resize", handlePricingLayout);
+
+    </script>
+
+</body>
+</html>
