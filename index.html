@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Study PDF</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <!-- MOBILE HAMBURGER -->
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">
+            ☰
+        </button>
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            <span>AI Study PDF</span>
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="study.html">Study</a>
+            <a href="pricing.html">Pricing</a>
+        </nav>
+
+        <!-- AUTH BUTTONS -->
+        <div class="nav-buttons">
+            <a href="login.html" class="login-button">Login</a>
+            <a href="register.html" class="get-started-button">Sign Up</a>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MOBILE SIDE MENU
+    ========================== -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu-header">
+
+            <span>AI Study PDF</span>
+
+            <button class="close-menu" onclick="toggleMenu()" aria-label="Close menu">
+                ×
+            </button>
+
+        </div>
+
+        <a href="index.html" class="active" onclick="toggleMenu()">
+            Home
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="study.html">
+            Study
+        </a>
+
+        <a href="pricing.html">
+            Pricing
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Turn Your PDFs<br>
+                    Into <span>Better Grades</span>
+                </h1>
+
+                <p>
+                    Upload your study materials and let AI create
+                    summaries, quizzes, flashcards and more.
+                    Study smarter, not harder.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="register.html" class="primary-button">
+                        Get Started Free →
+                    </a>
+
+                    <a href="#features" class="secondary-button">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO ILLUSTRATION -->
+
+            <div class="hero-illustration">
+
+                <div class="soft-circle"></div>
+
+                <div class="arrow arrow-one">↙</div>
+                <div class="arrow arrow-two">↗</div>
+
+                <div class="floating-icon chat-icon">
+                    💬
+                </div>
+
+                <div class="floating-icon key-icon">
+                    🔑
+                </div>
+
+                <div class="floating-icon bulb-icon">
+                    💡
+                </div>
+
+                <div class="floating-icon book-icon">
+                    📖
+                </div>
+
+                <div class="pdf-card">
+
+                    <div class="pdf-label">
+                        PDF
+                    </div>
+
+                    <div class="pdf-line long"></div>
+                    <div class="pdf-line"></div>
+                    <div class="pdf-line medium"></div>
+                    <div class="pdf-line"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURE STRIP
+        ========================== -->
+
+        <section id="features" class="features">
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    A
+                </span>
+
+                <span>
+                    AI Summaries
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    ▦
+                </span>
+
+                <span>
+                    Smart Quizzes
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    ▤
+                </span>
+
+                <span>
+                    Flashcards
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    ●
+                </span>
+
+                <span>
+                    Chat with PDF
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHY CHOOSE US
+        ========================== -->
+
+        <section class="why-section">
+
+            <div class="why-text">
+
+                <p class="section-label">
+                    WHY CHOOSE US
+                </p>
+
+                <h2>
+                    Everything You Need<br>
+                    to Study Smarter
+                </h2>
+
+                <p class="why-description">
+                    Our AI-powered platform helps you get the most
+                    out of your study materials with powerful tools
+                    designed for better learning and higher grades.
+                </p>
+
+            </div>
+
+
+            <div class="why-cards">
+
+                <div class="why-card">
+
+                    <span class="why-card-icon purple">
+                        A
+                    </span>
+
+                    <h3>
+                        AI-Powered Summaries
+                    </h3>
+
+                    <p>
+                        Get clear, concise summaries
+                        in seconds.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <span class="why-card-icon green">
+                        ▣
+                    </span>
+
+                    <h3>
+                        Interactive Quizzes
+                    </h3>
+
+                    <p>
+                        Test your knowledge and
+                        track your progress.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <span class="why-card-icon orange">
+                        ▤
+                    </span>
+
+                    <h3>
+                        Flashcards
+                    </h3>
+
+                    <p>
+                        Create and study flashcards
+                        for better retention.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <span class="why-card-icon blue">
+                        ●
+                    </span>
+
+                    <h3>
+                        Chat with Your PDF
+                    </h3>
+
+                    <p>
+                        Ask questions and get instant
+                        answers from your documents.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const menu = document.getElementById("mobileMenu");
+
+            menu.classList.toggle("show");
+
+        }
+
+    </script>
+
+</body>
+</html>

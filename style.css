@@ -1,0 +1,975 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #17213d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    background: #ffffff;
+    border-bottom: 1px solid #edf0f8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #17213d;
+}
+
+.logo-icon {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #5b45f5;
+    color: white;
+
+    font-size: 17px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    margin-left: 60px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #65708c;
+}
+
+.nav-links a.active {
+    color: #5b45f5;
+    font-weight: 600;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-button {
+    padding: 10px 18px;
+
+    border: 1px solid #e1e5ef;
+    border-radius: 7px;
+
+    font-size: 13px;
+    color: #3e4963;
+}
+
+.get-started-button {
+    padding: 11px 19px;
+
+    border-radius: 7px;
+
+    background: #5b45f5;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   DESKTOP HAMBURGER
+========================= */
+
+.menu-button {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 25px;
+    color: #34405c;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 10% 45px;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            #f1f3ff 0,
+            #ffffff 38%
+        );
+}
+
+.hero-content {
+    width: 53%;
+    max-width: 610px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    line-height: 1.08;
+    letter-spacing: -2px;
+
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    color: #5b45f5;
+}
+
+.hero-content p {
+    max-width: 520px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #65708c;
+
+    margin-bottom: 31px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.primary-button {
+    padding: 15px 24px;
+
+    background: #5b45f5;
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.secondary-button {
+    padding: 14px 25px;
+
+    border: 1px solid #dce1ec;
+    border-radius: 8px;
+
+    background: white;
+
+    color: #39445f;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   HERO ILLUSTRATION
+========================= */
+
+.hero-illustration {
+    width: 43%;
+    max-width: 470px;
+    height: 360px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soft-circle {
+    position: absolute;
+
+    width: 310px;
+    height: 310px;
+
+    border-radius: 50%;
+
+    background: #f0f2ff;
+}
+
+.pdf-card {
+    width: 180px;
+    height: 235px;
+
+    position: relative;
+    z-index: 2;
+
+    padding: 27px 22px;
+
+    background: white;
+
+    border-radius: 9px;
+
+    box-shadow: 0 18px 45px rgba(76, 70, 150, 0.13);
+}
+
+.pdf-label {
+    width: 61px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+
+    border-radius: 5px;
+
+    background: #ef5350;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pdf-line {
+    width: 78%;
+    height: 7px;
+
+    margin-bottom: 13px;
+
+    border-radius: 5px;
+
+    background: #dfe3ff;
+}
+
+.pdf-line.long {
+    width: 90%;
+}
+
+.pdf-line.medium {
+    width: 65%;
+}
+
+
+/* =========================
+   FLOATING ICONS
+========================= */
+
+.floating-icon {
+    width: 43px;
+    height: 43px;
+
+    position: absolute;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-size: 18px;
+
+    box-shadow: 0 10px 20px rgba(50, 50, 100, 0.1);
+}
+
+.chat-icon {
+    top: 45px;
+    left: 80px;
+
+    background: #27c58a;
+}
+
+.key-icon {
+    top: 67px;
+    right: 43px;
+
+    background: #6748f5;
+}
+
+.bulb-icon {
+    bottom: 79px;
+    right: 58px;
+
+    background: #f5b83d;
+}
+
+.book-icon {
+    bottom: 35px;
+    left: 132px;
+
+    background: #2775e8;
+}
+
+
+/* =========================
+   ARROWS
+========================= */
+
+.arrow {
+    position: absolute;
+    z-index: 1;
+
+    color: #7b72ef;
+
+    font-size: 38px;
+}
+
+.arrow-one {
+    left: 74px;
+    bottom: 74px;
+}
+
+.arrow-two {
+    right: 86px;
+    bottom: 119px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 11%;
+
+    background: #ffffff;
+    border-top: 1px solid #f0f2f7;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #56627d;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.feature-icon {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #5b45f5;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   WHY SECTION
+========================= */
+
+.why-section {
+    padding: 90px 10%;
+
+    background: #f9faff;
+}
+
+.why-text {
+    max-width: 650px;
+
+    margin-bottom: 45px;
+}
+
+.section-label {
+    margin-bottom: 12px;
+
+    color: #5b45f5;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.why-text h2 {
+    font-size: 38px;
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+.why-description {
+    max-width: 550px;
+
+    color: #65708c;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.why-card {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #edf0f7;
+    border-radius: 13px;
+
+    box-shadow: 0 8px 25px rgba(60, 60, 120, 0.04);
+}
+
+.why-card-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 9px;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.why-card-icon.purple {
+    background: #eeeaff;
+    color: #5b45f5;
+}
+
+.why-card-icon.green {
+    background: #e6f9f1;
+    color: #27b77f;
+}
+
+.why-card-icon.orange {
+    background: #fff3df;
+    color: #e9a32e;
+}
+
+.why-card-icon.blue {
+    background: #e7f0ff;
+    color: #2775e8;
+}
+
+.why-card h3 {
+    margin-bottom: 9px;
+
+    font-size: 16px;
+}
+
+.why-card p {
+    color: #7b849b;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+        height: 66px;
+
+        padding: 0 20px;
+
+        justify-content: flex-start;
+
+        gap: 16px;
+    }
+
+    .menu-button {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 30px;
+        height: 30px;
+
+        border: none;
+        background: transparent;
+
+        font-size: 25px;
+        color: #34405c;
+
+        cursor: pointer;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .logo-icon {
+        width: 29px;
+        height: 29px;
+
+        border-radius: 7px;
+
+        font-size: 15px;
+    }
+
+    .nav-links,
+    .nav-buttons {
+        display: none;
+    }
+
+
+    /* =========================
+       MOBILE SIDE MENU
+    ========================= */
+
+    .mobile-menu {
+        width: 60%;
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 1000;
+
+        display: none;
+        flex-direction: column;
+
+        padding: 25px 22px;
+
+        background: #ffffff;
+
+        border-right: 1px solid #edf0f8;
+
+        box-shadow: 5px 0 25px rgba(50, 50, 100, 0.08);
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+
+    .mobile-menu-header {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 25px;
+    }
+
+    .mobile-menu-header span {
+        font-size: 15px;
+        font-weight: 700;
+
+        color: #17213d;
+    }
+
+    .close-menu {
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        background: transparent;
+
+        color: #34405c;
+
+        font-size: 28px;
+        line-height: 1;
+
+        cursor: pointer;
+    }
+
+    .mobile-menu a {
+        width: 100%;
+
+        padding: 15px 0;
+
+        border-bottom: 1px solid #f0f1f6;
+
+        font-size: 15px;
+
+        color: #59647e;
+    }
+
+    .mobile-menu a.active {
+        color: #5b45f5;
+
+        font-weight: 600;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        padding: 42px 20px 25px;
+
+        background:
+            radial-gradient(
+                circle at 100% 15%,
+                #f0f2ff 0,
+                #ffffff 34%
+            );
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: none;
+
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        font-size: 39px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+
+        margin-bottom: 18px;
+    }
+
+    .hero-content p {
+        width: 100%;
+
+        font-size: 14px;
+        line-height: 1.65;
+
+        margin-bottom: 23px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        display: flex;
+
+        gap: 10px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        flex: 1;
+
+        text-align: center;
+
+        padding: 13px 10px;
+
+        font-size: 13px;
+    }
+
+
+    /* =========================
+       MOBILE ILLUSTRATION
+    ========================= */
+
+    .hero-illustration {
+        width: 100%;
+        height: 270px;
+
+        margin-top: 25px;
+    }
+
+    .soft-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .pdf-card {
+        width: 135px;
+        height: 178px;
+
+        padding: 20px 17px;
+
+        border-radius: 8px;
+    }
+
+    .pdf-label {
+        width: 48px;
+        height: 25px;
+
+        margin-bottom: 18px;
+
+        font-size: 11px;
+    }
+
+    .pdf-line {
+        height: 5px;
+
+        margin-bottom: 10px;
+    }
+
+    .floating-icon {
+        width: 35px;
+        height: 35px;
+
+        border-radius: 8px;
+
+        font-size: 14px;
+    }
+
+    .chat-icon {
+        top: 22px;
+        left: 27%;
+    }
+
+    .key-icon {
+        top: 39px;
+        right: 17%;
+    }
+
+    .bulb-icon {
+        bottom: 37px;
+        right: 20%;
+    }
+
+    .book-icon {
+        bottom: 19px;
+        left: 34%;
+    }
+
+    .arrow {
+        font-size: 30px;
+    }
+
+    .arrow-one {
+        left: 25%;
+        bottom: 43px;
+    }
+
+    .arrow-two {
+        right: 27%;
+        bottom: 70px;
+    }
+
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+        min-height: 76px;
+
+        padding: 12px 16px;
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 5px;
+    }
+
+    .feature {
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 5px;
+
+        text-align: center;
+
+        font-size: 9px;
+    }
+
+    .feature-icon {
+        width: 20px;
+        height: 20px;
+
+        font-size: 12px;
+    }
+
+
+    /* =========================
+       WHY SECTION
+    ========================= */
+
+    .why-section {
+        padding: 55px 20px;
+    }
+
+    .why-text {
+        margin-bottom: 30px;
+    }
+
+    .section-label {
+        font-size: 11px;
+    }
+
+    .why-text h2 {
+        font-size: 29px;
+        line-height: 1.2;
+    }
+
+    .why-description {
+        font-size: 14px;
+    }
+
+    .why-cards {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .why-card {
+        padding: 21px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    .navbar {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 35px 16px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .hero-buttons {
+        gap: 8px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        padding: 12px 7px;
+
+        font-size: 12px;
+    }
+
+    .hero-illustration {
+        height: 245px;
+
+        margin-top: 18px;
+    }
+
+    .features {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .feature {
+        font-size: 8px;
+    }
+
+    .mobile-menu {
+        width: 60%;
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .why-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .why-text h2 {
+        font-size: 27px;
+    }
+}

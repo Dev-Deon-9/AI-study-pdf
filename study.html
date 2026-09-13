@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study - AI Study PDF</title>
+
+    <link rel="stylesheet" href="study.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="study-navbar">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">✦</span>
+
+            <span>AI Study PDF</span>
+
+        </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav class="study-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="study.html" class="active">
+                Study
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+        </nav>
+
+
+        <!-- USER -->
+
+        <div class="study-user">
+
+            <div class="user-avatar">
+                G
+            </div>
+
+            <span>
+                Gideon
+            </span>
+
+        </div>
+
+
+        <!-- MOBILE HAMBURGER -->
+
+        <button
+            class="study-menu"
+            onclick="toggleStudyMenu()"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         MOBILE SIDE MENU
+    ========================== -->
+
+    <aside
+        class="study-mobile-menu"
+        id="studyMobileMenu"
+    >
+
+        <div class="mobile-menu-header">
+
+            <span>
+                Menu
+            </span>
+
+            <button
+                class="close-study-menu"
+                onclick="toggleStudyMenu()"
+                aria-label="Close menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="study.html" class="active">
+            Study
+        </a>
+
+        <a href="pricing.html">
+            Pricing
+        </a>
+
+    </aside>
+
+
+
+    <!-- =========================
+         STUDY PAGE
+    ========================== -->
+
+    <main class="study-page">
+
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
+        <section class="study-header">
+
+            <div>
+
+                <a
+                    href="dashboard.html"
+                    class="back-link"
+                >
+                    ← Back to Dashboard
+                </a>
+
+                <h1>
+                    Biology Notes
+                </h1>
+
+                <p>
+                    42 pages • Last studied yesterday
+                </p>
+
+            </div>
+
+
+            <button class="study-upload">
+                + Upload PDF
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================
+             STUDY TABS
+        ========================== -->
+
+        <section class="study-tabs">
+
+            <button class="study-tab active">
+                Summary
+            </button>
+
+            <button class="study-tab">
+                Quiz
+            </button>
+
+            <button class="study-tab">
+                Flashcards
+            </button>
+
+            <button class="study-tab">
+                Chat with PDF
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================
+             STUDY CONTENT
+        ========================== -->
+
+        <section class="study-content">
+
+
+            <!-- =========================
+                 PDF PANEL
+            ========================== -->
+
+            <div class="pdf-panel">
+
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            Biology Notes.pdf
+                        </h2>
+
+                        <p>
+                            42 pages
+                        </p>
+
+                    </div>
+
+                    <button class="small-button">
+                        Download
+                    </button>
+
+                </div>
+
+
+
+                <!-- PDF PREVIEW -->
+
+                <div class="pdf-preview">
+
+                    <div class="pdf-page">
+
+
+                        <div class="pdf-heading">
+
+                            <div class="fake-pdf-logo">
+                                BIO
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Introduction to Biology
+                                </h3>
+
+                                <p>
+                                    Chapter 1
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pdf-line long"></div>
+
+                        <div class="pdf-line"></div>
+
+                        <div class="pdf-line"></div>
+
+                        <div class="pdf-line medium"></div>
+
+
+                        <h4>
+                            What is Biology?
+                        </h4>
+
+                        <div class="pdf-line"></div>
+
+                        <div class="pdf-line long"></div>
+
+                        <div class="pdf-line"></div>
+
+
+                        <h4>
+                            Characteristics of Living Things
+                        </h4>
+
+                        <div class="pdf-line medium"></div>
+
+                        <div class="pdf-line"></div>
+
+                        <div class="pdf-line long"></div>
+
+                        <div class="pdf-line"></div>
+
+
+                        <div class="pdf-box">
+
+                            <strong>
+                                Key Concept
+                            </strong>
+
+                            <p>
+                                Living organisms carry out
+                                essential processes that allow
+                                them to survive and reproduce.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 SUMMARY PANEL
+            ========================== -->
+
+            <div class="summary-panel">
+
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            AI Summary
+                        </h2>
+
+                        <p>
+                            Generated from your PDF
+                        </p>
+
+                    </div>
+
+                    <span class="ai-badge">
+                        AI
+                    </span>
+
+                </div>
+
+
+
+                <!-- SUMMARY CONTENT -->
+
+                <div class="summary-content">
+
+                    <p>
+                        Biology is the scientific study of
+                        life and living organisms. It explores
+                        how organisms function, grow, reproduce,
+                        and interact with their environment.
+                    </p>
+
+
+                    <h3>
+                        Key Points
+                    </h3>
+
+
+                    <ul>
+
+                        <li>
+                            Biology focuses on living organisms
+                            and their processes.
+                        </li>
+
+                        <li>
+                            Living things are made up of cells.
+                        </li>
+
+                        <li>
+                            Organisms grow, reproduce and respond
+                            to their environment.
+                        </li>
+
+                        <li>
+                            Cells are the basic structural and
+                            functional units of life.
+                        </li>
+
+                    </ul>
+
+
+                    <h3>
+                        Important Terms
+                    </h3>
+
+
+                    <div class="term-list">
+
+                        <span>
+                            Cell
+                        </span>
+
+                        <span>
+                            Organism
+                        </span>
+
+                        <span>
+                            Genetics
+                        </span>
+
+                        <span>
+                            Ecosystem
+                        </span>
+
+                    </div>
+
+
+                    <!-- SUMMARY ACTIONS -->
+
+                    <div class="summary-action">
+
+                        <button class="primary-study-button">
+                            Generate Quiz
+                        </button>
+
+                        <button class="secondary-study-button">
+                            Create Flashcards
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function toggleStudyMenu() {
+
+            const menu =
+                document.getElementById("studyMobileMenu");
+
+            menu.classList.toggle("show");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

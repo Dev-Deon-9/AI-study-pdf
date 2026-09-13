@@ -1,0 +1,800 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f8ff;
+    color: #222;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.study-navbar {
+    height: 75px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.study-navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #222;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.logo-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7654e8;
+    color: white;
+
+    border-radius: 9px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   DESKTOP NAV
+========================= */
+
+.study-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.study-nav a {
+    color: #777;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.study-nav a.active {
+    color: #7654e8;
+    font-weight: 600;
+}
+
+
+/* =========================
+   USER
+========================= */
+
+.study-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #555;
+    font-size: 14px;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eee9ff;
+    color: #7654e8;
+
+    border-radius: 50%;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.study-menu {
+    display: none;
+
+    border: none;
+    background: none;
+
+    color: #333;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.study-mobile-menu {
+    display: none;
+}
+
+
+/* =========================
+   STUDY PAGE
+========================= */
+
+.study-page {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 40px 30px 60px;
+}
+
+
+/* =========================
+   STUDY HEADER
+========================= */
+
+.study-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.back-link {
+    color: #7654e8;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.study-header h1 {
+    font-size: 32px;
+
+    margin: 12px 0 7px;
+}
+
+.study-header p {
+    color: #888;
+
+    font-size: 13px;
+}
+
+.study-upload {
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #7654e8;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   STUDY TABS
+========================= */
+
+.study-tabs {
+    display: flex;
+    gap: 7px;
+
+    padding: 6px;
+
+    margin-bottom: 25px;
+
+    background: #f0eef7;
+
+    border-radius: 11px;
+}
+
+.study-tab {
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.study-tab.active {
+    background: white;
+
+    color: #7654e8;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   STUDY CONTENT
+========================= */
+
+.study-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   PANELS
+========================= */
+
+.pdf-panel,
+.summary-panel {
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+}
+
+.panel-heading {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.panel-heading h2 {
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.panel-heading p {
+    color: #999;
+
+    font-size: 11px;
+}
+
+.small-button {
+    padding: 8px 13px;
+
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+
+    background: white;
+    color: #555;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.ai-badge {
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    background: #eee9ff;
+    color: #7654e8;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   PDF PREVIEW
+========================= */
+
+.pdf-preview {
+    height: 540px;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #f4f3f7;
+}
+
+.pdf-page {
+    width: 80%;
+    min-height: 650px;
+
+    padding: 35px;
+
+    background: white;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   FAKE PDF
+========================= */
+
+.pdf-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.fake-pdf-logo {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eee9ff;
+    color: #7654e8;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.pdf-heading h3 {
+    font-size: 15px;
+
+    margin-bottom: 4px;
+}
+
+.pdf-heading p {
+    color: #999;
+
+    font-size: 10px;
+}
+
+.pdf-line {
+    width: 90%;
+    height: 6px;
+
+    margin-bottom: 9px;
+
+    background: #eeeeee;
+
+    border-radius: 4px;
+}
+
+.pdf-line.long {
+    width: 100%;
+}
+
+.pdf-line.medium {
+    width: 65%;
+}
+
+.pdf-page h4 {
+    font-size: 13px;
+
+    margin: 25px 0 13px;
+}
+
+.pdf-box {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #f5f1ff;
+
+    border-left: 3px solid #7654e8;
+
+    border-radius: 6px;
+}
+
+.pdf-box strong {
+    display: block;
+
+    color: #7654e8;
+
+    font-size: 11px;
+
+    margin-bottom: 7px;
+}
+
+.pdf-box p {
+    color: #666;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary-content {
+    padding: 25px;
+}
+
+.summary-content > p {
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.summary-content h3 {
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+.summary-content ul {
+    padding-left: 18px;
+
+    margin-bottom: 25px;
+}
+
+.summary-content li {
+    color: #666;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   IMPORTANT TERMS
+========================= */
+
+.term-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.term-list span {
+    padding: 7px 10px;
+
+    background: #f1eff8;
+
+    color: #7654e8;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   SUMMARY ACTIONS
+========================= */
+
+.summary-action {
+    display: flex;
+
+    gap: 10px;
+}
+
+.primary-study-button,
+.secondary-study-button {
+    flex: 1;
+
+    height: 42px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.primary-study-button {
+    border: none;
+
+    background: #7654e8;
+    color: white;
+}
+
+.secondary-study-button {
+    border: 1px solid #dddddd;
+
+    background: white;
+    color: #555;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .study-navbar {
+        height: 70px;
+
+        padding: 0 20px;
+    }
+
+    .study-navbar .logo {
+        font-size: 14px;
+    }
+
+    .logo-icon {
+        width: 31px;
+        height: 31px;
+
+        font-size: 16px;
+    }
+
+
+    /* HIDE DESKTOP NAV */
+
+    .study-nav,
+    .study-user {
+        display: none;
+    }
+
+
+    /* HAMBURGER */
+
+    .study-menu {
+        display: block;
+    }
+
+
+    /* =========================
+       MOBILE DRAWER
+    ========================== */
+
+    .study-mobile-menu {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 60%;
+        height: 100vh;
+
+        z-index: 1000;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+
+        background: white;
+
+        border-right: 1px solid #eeeeee;
+
+        transform: translateX(-100%);
+    }
+
+    .study-mobile-menu.show {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-bottom: 25px;
+
+        margin-bottom: 10px;
+
+        border-bottom: 1px solid #eeeeee;
+
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .close-study-menu {
+        border: none;
+        background: none;
+
+        color: #555;
+
+        font-size: 27px;
+
+        cursor: pointer;
+    }
+
+    .study-mobile-menu > a {
+        padding: 15px 5px;
+
+        color: #666;
+
+        text-decoration: none;
+
+        font-size: 14px;
+    }
+
+    .study-mobile-menu > a.active {
+        color: #7654e8;
+
+        font-weight: 600;
+    }
+
+
+    /* =========================
+       STUDY PAGE
+    ========================== */
+
+    .study-page {
+        padding: 30px 20px 45px;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    .study-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        margin-bottom: 22px;
+    }
+
+    .study-header h1 {
+        font-size: 27px;
+    }
+
+    .study-header p {
+        font-size: 12px;
+    }
+
+    .study-upload {
+        width: 100%;
+    }
+
+
+    /* =========================
+       TABS
+    ========================== */
+
+    .study-tabs {
+        overflow-x: auto;
+
+        margin-bottom: 20px;
+    }
+
+    .study-tab {
+        min-width: 120px;
+
+        flex: none;
+    }
+
+
+    /* =========================
+       CONTENT
+    ========================== */
+
+    .study-content {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* =========================
+       PDF
+    ========================== */
+
+    .pdf-preview {
+        height: 400px;
+
+        padding: 20px;
+    }
+
+    .pdf-page {
+        width: 100%;
+
+        min-height: 600px;
+
+        padding: 25px;
+    }
+
+
+    /* =========================
+       SUMMARY
+    ========================== */
+
+    .summary-content {
+        padding: 20px;
+    }
+
+    .summary-action {
+        flex-direction: column;
+    }
+
+    .primary-study-button,
+    .secondary-study-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    .study-page {
+        padding: 25px 15px 40px;
+    }
+
+    .pdf-preview {
+        height: 350px;
+
+        padding: 15px;
+    }
+
+    .pdf-page {
+        padding: 20px;
+    }
+
+    .panel-heading {
+        padding: 16px;
+    }
+
+    .summary-content {
+        padding: 17px;
+    }
+
+}

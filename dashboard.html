@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - AI Study PDF</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="dashboard-navbar">
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">✦</span>
+
+            <span>AI Study PDF</span>
+
+        </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav class="dashboard-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="study.html">
+                Study
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+        </nav>
+
+
+        <!-- USER -->
+
+        <div class="dashboard-user">
+
+            <div class="user-avatar">
+                G
+            </div>
+
+            <span>
+                Gideon
+            </span>
+
+        </div>
+
+
+        <!-- MOBILE HAMBURGER -->
+
+        <button
+            class="dashboard-menu"
+            onclick="toggleDashboardMenu()"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         MOBILE SIDE MENU
+    ========================== -->
+
+    <aside
+        class="dashboard-mobile-menu"
+        id="dashboardMobileMenu"
+    >
+
+        <div class="mobile-menu-header">
+
+            <span>
+                Menu
+            </span>
+
+            <button
+                class="close-dashboard-menu"
+                onclick="toggleDashboardMenu()"
+                aria-label="Close menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="study.html">
+            Study
+        </a>
+
+        <a href="pricing.html">
+            Pricing
+        </a>
+
+    </aside>
+
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <main class="dashboard-page">
+
+
+        <!-- =========================
+             WELCOME
+        ========================== -->
+
+        <section class="dashboard-welcome">
+
+            <div class="welcome-text">
+
+                <p class="welcome-small">
+                    Good morning 👋
+                </p>
+
+                <h1>
+                    Welcome back, Gideon!
+                </h1>
+
+                <p>
+                    Ready to turn your study materials
+                    into better grades?
+                </p>
+
+            </div>
+
+
+            <a
+                href="study.html"
+                class="upload-button"
+            >
+                + Upload PDF
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="dashboard-stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    ▤
+                </div>
+
+                <div>
+
+                    <p>
+                        PDFs Studied
+                    </p>
+
+                    <h2>
+                        12
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    ◉
+                </div>
+
+                <div>
+
+                    <p>
+                        Study Hours
+                    </p>
+
+                    <h2>
+                        24.5
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p>
+                        Quizzes Completed
+                    </p>
+
+                    <h2>
+                        38
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    ★
+                </div>
+
+                <div>
+
+                    <p>
+                        Average Score
+                    </p>
+
+                    <h2>
+                        87%
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DASHBOARD CONTENT
+        ========================== -->
+
+        <section class="dashboard-content">
+
+
+            <!-- =========================
+                 RECENT MATERIALS
+            ========================== -->
+
+            <div class="recent-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>
+                            Recent Study Materials
+                        </h2>
+
+                        <p>
+                            Continue where you left off.
+                        </p>
+
+                    </div>
+
+                    <a href="study.html">
+                        View All
+                    </a>
+
+                </div>
+
+
+
+                <!-- MATERIAL 1 -->
+
+                <div class="study-material">
+
+                    <div class="material-icon purple">
+                        PDF
+                    </div>
+
+                    <div class="material-info">
+
+                        <h3>
+                            Biology Notes
+                        </h3>
+
+                        <p>
+                            42 pages • Studied yesterday
+                        </p>
+
+                    </div>
+
+                    <div class="material-score">
+
+                        <span>
+                            92%
+                        </span>
+
+                        <p>
+                            Score
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="study.html"
+                        class="continue-button"
+                    >
+                        Continue
+                    </a>
+
+                </div>
+
+
+
+                <!-- MATERIAL 2 -->
+
+                <div class="study-material">
+
+                    <div class="material-icon blue">
+                        PDF
+                    </div>
+
+                    <div class="material-info">
+
+                        <h3>
+                            Mathematics Revision
+                        </h3>
+
+                        <p>
+                            28 pages • Studied 2 days ago
+                        </p>
+
+                    </div>
+
+                    <div class="material-score">
+
+                        <span>
+                            85%
+                        </span>
+
+                        <p>
+                            Score
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="study.html"
+                        class="continue-button"
+                    >
+                        Continue
+                    </a>
+
+                </div>
+
+
+
+                <!-- MATERIAL 3 -->
+
+                <div class="study-material">
+
+                    <div class="material-icon orange">
+                        PDF
+                    </div>
+
+                    <div class="material-info">
+
+                        <h3>
+                            Physics Chapter 4
+                        </h3>
+
+                        <p>
+                            35 pages • Studied 4 days ago
+                        </p>
+
+                    </div>
+
+                    <div class="material-score">
+
+                        <span>
+                            78%
+                        </span>
+
+                        <p>
+                            Score
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="study.html"
+                        class="continue-button"
+                    >
+                        Continue
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PROGRESS
+            ========================== -->
+
+            <div class="progress-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>
+                            Your Progress
+                        </h2>
+
+                        <p>
+                            Keep up the great work!
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-card">
+
+                    <div class="progress-circle">
+
+                        <span>
+                            87%
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Overall Progress
+                    </h3>
+
+                    <p>
+                        You're doing better than
+                        78% of students.
+                    </p>
+
+                </div>
+
+
+                <div class="weekly-progress">
+
+                    <h3>
+                        Weekly Goal
+                    </h3>
+
+                    <div class="progress-bar">
+
+                        <span></span>
+
+                    </div>
+
+                    <p>
+                        6 / 8 hours completed
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function toggleDashboardMenu() {
+
+            const menu =
+                document.getElementById("dashboardMobileMenu");
+
+            menu.classList.toggle("show");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
