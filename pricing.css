@@ -266,7 +266,7 @@ body {
     text-align: center;
     text-decoration: none;
     background: #2563eb;
-    color: #ffffff;
+    color: white;
     padding: 14px;
     border-radius: 9px;
     font-size: 14px;
@@ -276,7 +276,7 @@ body {
 .pricing-card:first-child .pricing-button {
     background: #eef4ff;
     color: #2563eb;
-}
+}  
 
 
 /* =========================
